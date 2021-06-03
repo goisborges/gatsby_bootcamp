@@ -1,6 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Menu from "./menu"
+
+import * as Headerstyle from './header.module.scss'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,17 +20,20 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+        <Link className={Headerstyle.mytext} to="/"
+          
+          /*style={{
+           color: `white`,
+           textDecoration: `none`,
+          }}*/
         >
           {siteTitle}
         </Link>
       </h1>
     </div>
+    
+      <Menu />
+    
   </header>
 )
 
