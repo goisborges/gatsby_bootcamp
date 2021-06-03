@@ -30,6 +30,7 @@ const Blog = () => {
         <Layout>
             <div>
                 <h1>Blog</h1>
+                <p>dynamic pages being built using a Javascript template and markdown files located inside the posts folder</p>
             </div>
             <ol className={blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) => {

@@ -9,7 +9,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <p>Welcome to my portfolio</p>
+    <p>Welcome to my portfolio and blog project</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
@@ -18,7 +18,7 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
-    <button><Link to="/contact/">Contact Me</Link></button>
+    
     
     
   </Layout>
