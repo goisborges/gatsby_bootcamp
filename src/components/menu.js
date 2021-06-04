@@ -13,6 +13,7 @@ const Menu = () => {
                 <li><Link className={menuStyle.liItem} activeClassName={menuStyle.activeItem} to="/">Home</Link></li>
                 <li><Link className={menuStyle.liItem} activeClassName={menuStyle.activeItem} to="/contact">Contact</Link> </li>
                 <li><Link className={menuStyle.liItem} activeClassName={menuStyle.activeItem} to="/blog">Blog</Link> </li>
+                <li><Link className={menuStyle.liItem} activeClassName={menuStyle.activeItem} to="/strapiblog">Strapi Blog</Link> </li>
             </ul>
         </nav>
         

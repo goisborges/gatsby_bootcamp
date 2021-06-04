@@ -1,15 +1,28 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import { graphql, useStaticQuery} from "gatsby"
 
-const IndexPage = () => (
+
+const IndexPage = () => {
+    const data = useStaticQuery(graphql`
+        query SiteDescription {
+            site {
+                siteMetadata {
+                    description
+                }
+            }
+        }
+    
+    `)
+
+  return (
   <Layout>
     <Seo title="Home" />
-    <p>Welcome to my portfolio and blog project</p>
+    <h2>{data.site.siteMetadata.description}</h2>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
@@ -23,5 +36,6 @@ const IndexPage = () => (
     
   </Layout>
 )
+  }
 
 export default IndexPage

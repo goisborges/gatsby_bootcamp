@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `My Gatsby Blog`,
-    description: `My First Gatsby and React Blog Project`,
+    description: `My Gatsby, Strapi and Markdown Files Blog Project`,
     author: `Marcos de Gois Borges`,
   },
   plugins: [
@@ -14,6 +14,17 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        contentTypes: [
+          `article`,
+          `user`
+        ],
+        queryLimit: 1000,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -35,7 +46,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
 
     //tells gatsby the source of files
     {
