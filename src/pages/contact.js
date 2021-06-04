@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 
-import { Link } from "gatsby"
 
 const Contact = () => 
     (
@@ -12,11 +11,11 @@ const Contact = () =>
             <Seo title="Contact" />
             <div>
                 
-                <h1>This is my contact page</h1>
-                <p>Leave your message</p>
+                <p>This is my contact page</p>
+                <p>Contact me by e-mail or my Linkedin page</p>
             </div>
-            <button><Link to="../">Home</Link></button>
-            <button><a href="http://www.facebook.com" target="_blank" rel="noreferrer">My Facebook page</a></button>
+            <button><a href="mailto:marcosb@avetti.ca" target="_blank" rel="noreferrer">E-mail me</a></button> <br></br>
+            <button><a href="http://www.linkedin.com" target="_blank" rel="noreferrer">My LinkedIn page</a></button>
             
         </Layout>
     )

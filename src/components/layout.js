@@ -39,11 +39,13 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
+            fontSize: `14px`,
           }}
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com">Gatsby</a> and 
+          <a href="https://www.strapi.io"> Strapi</a>
         </footer>
       </div>
     </>

@@ -44,10 +44,14 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  list-style-type: none;
+  text-decoration: none;
+  color: grey;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #731897;
 }
 abbr[title] {
   border-bottom: none;
